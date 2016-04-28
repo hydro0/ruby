@@ -40,7 +40,7 @@ module NodesProvider
 
   def get_nodes_using_block(max_count)
     nodes = []
-    (0..max_count).each do
+    (1..max_count).each do
       node = yield
       nodes.push(node)
     end
